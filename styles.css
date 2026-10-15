@@ -1,0 +1,50 @@
+.hero {
+  min-height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("hero%20image.jpg") center / cover no-repeat;
+}
+
+.menu-image {
+  height: 220px;
+  object-fit: cover;
+}
+
+.contact-form {
+  max-width: 600px;
+}
+
+.travel-hero {
+  min-height: 55vh;
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("travel-hero.jpg") center / cover no-repeat;
+}
+
+.travel-image {
+  height: 220px;
+  object-fit: cover;
+}
+
+.travel-accordion {
+  max-width: 800px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-link {
+  align-items: center;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  color: white;
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  text-decoration: none;
+  width: 40px;
+}
+
+.social-link:hover {
+  background-color: white;
+  color: #212529;
+}

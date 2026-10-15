@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Olive &amp; Ember Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">Olive &amp; Ember</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarLinks">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="travel.html">Travel</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero d-flex align-items-center text-center text-white" id="home">
+        <div class="container">
+          <h1>Good food, made with heart</h1>
+          <p>Fresh from our kitchen and ready to share.</p>
+          <a class="btn btn-light" href="#menu">See the menu</a>
+        </div>
+      </section>
+
+      <section class="py-5" id="menu">
+        <div class="container">
+          <h2 class="text-center mb-4">Our Menu</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <article class="card h-100">
+                <img src="hero%20image.jpg" class="card-img-top menu-image" alt="Freshly baked pizza">
+                <div class="card-body">
+                  <h3 class="h5 card-title">Wood-fired pizza</h3>
+                  <p class="card-text">Baked until golden with tomato, cheese, and fresh herbs.</p>
+                  <p class="fw-bold mb-0">KSh 1,800</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="card h-100">
+                <img src="steak.jpg" class="card-img-top menu-image" alt="Grilled steak">
+                <div class="card-body">
+                  <h3 class="h5 card-title">Grilled steak</h3>
+                  <p class="card-text">A tender steak, cooked over an open flame.</p>
+                  <p class="fw-bold mb-0">KSh 2,800</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="card h-100">
+                <img src="tiramisu.jpg" class="card-img-top menu-image" alt="Homemade tiramisu">
+                <div class="card-body">
+                  <h3 class="h5 card-title">Tiramisu</h3>
+                  <p class="card-text">A classic coffee and cream dessert, made in-house.</p>
+                  <p class="fw-bold mb-0">KSh 900</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-light" id="about">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-md-6">
+              <img src="hero%20image.jpg" class="img-fluid rounded" alt="Pizza fresh from the oven">
+            </div>
+            <div class="col-md-6">
+              <h2>About Us</h2>
+              <p>Olive &amp; Ember is a neighborhood restaurant serving simple, delicious food. We cook with care and love bringing people together around the table.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5" id="contact">
+        <div class="container">
+          <h2 class="text-center mb-4">Contact Us</h2>
+          <form class="mx-auto contact-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-3 bg-dark text-white text-center">
+      <div class="container">
+        <p class="mb-2">&copy; 2026 Olive &amp; Ember Restaurant</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/" class="social-link" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/" class="social-link" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

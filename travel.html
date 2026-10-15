@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wander Kenya | Find your next trip</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="travel.html">Wander Kenya</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#travelNav" aria-controls="travelNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="travelNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+            <li class="nav-item"><a class="nav-link" href="#travel-contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Restaurant</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="travel-hero d-flex align-items-center text-center text-white" id="home">
+        <div class="container">
+          <h1>Find your next adventure</h1>
+          <p>Discover unforgettable places across Kenya.</p>
+          <a href="#destinations" class="btn btn-light">Explore destinations</a>
+        </div>
+      </section>
+
+      <section class="py-5" id="destinations">
+        <div class="container">
+          <h2 class="text-center mb-4">Popular Destinations</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <article class="card h-100">
+                <img class="card-img-top travel-image" src="travel-maasai-mara.jpg" alt="Wildlife on the African savanna">
+                <div class="card-body">
+                  <h3 class="h5 card-title">Maasai Mara</h3>
+                  <p class="card-text">See wide-open savannas and the wildlife that calls them home.</p>
+                  <a href="#tours" class="btn btn-outline-dark">Learn More</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="card h-100">
+                <img class="card-img-top travel-image" src="travel-diani-beach.jpg" alt="Tropical beach beside the ocean">
+                <div class="card-body">
+                  <h3 class="h5 card-title">Diani Beach</h3>
+                  <p class="card-text">Relax on the coast, swim in clear water, and enjoy the sunshine.</p>
+                  <a href="#tours" class="btn btn-outline-dark">Learn More</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="card h-100">
+                <img class="card-img-top travel-image" src="travel-mount-kenya.jpg" alt="Mountain peaks beneath a bright sky">
+                <div class="card-body">
+                  <h3 class="h5 card-title">Mount Kenya</h3>
+                  <p class="card-text">Take in mountain scenery, fresh air, and trails for every pace.</p>
+                  <a href="#tours" class="btn btn-outline-dark">Learn More</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-light" id="tours">
+        <div class="container">
+          <h2 class="text-center mb-4">Tour Packages</h2>
+          <div class="accordion mx-auto travel-accordion" id="tourList">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#safariTour" aria-expanded="true" aria-controls="safariTour">Safari Getaway</button>
+              </h3>
+              <div id="safariTour" class="accordion-collapse collapse show" data-bs-parent="#tourList">
+                <div class="accordion-body">Enjoy a guided wildlife safari and a two-night stay. <a href="#travel-contact">Ask about this tour</a>.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coastTour" aria-expanded="false" aria-controls="coastTour">Coastal Escape</button>
+              </h3>
+              <div id="coastTour" class="accordion-collapse collapse" data-bs-parent="#tourList">
+                <div class="accordion-body">Spend three relaxing nights by the coast. <a href="#travel-contact">Ask about this tour</a>.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5" id="travel-contact">
+        <div class="container">
+          <h2 class="text-center mb-4">Plan a Trip</h2>
+          <form class="mx-auto contact-form">
+            <div class="mb-3">
+              <label for="travelName" class="form-label">Name</label>
+              <input class="form-control" id="travelName" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="travelEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="travelEmail" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="destination" class="form-label">Destination of interest</label>
+              <select class="form-select" id="destination" name="destination">
+                <option>Maasai Mara</option>
+                <option>Diani Beach</option>
+                <option>Mount Kenya</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="travelMessage" class="form-label">Message</label>
+              <textarea class="form-control" id="travelMessage" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-3 bg-dark text-white text-center">
+      <div class="container">
+        <p class="mb-2">&copy; 2026 Wander Kenya</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/" class="social-link" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/" class="social-link" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
